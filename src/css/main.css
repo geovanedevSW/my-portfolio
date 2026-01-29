@@ -1,0 +1,127 @@
+:root {
+  --color-oxblood: #622021;
+  --color-crimson: #991b20;
+  --color-egypt: #e1caa5;
+  --color-seafoam: #fef9de;
+  --font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-oxblood);
+  color: var(--color-seafoam);
+  font-family: var(--font-family);
+  margin: 0;
+}
+/*
+a {
+  color: var(--color-crimson);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7f161a;
+}
+
+.navbar {
+  background-color: var(--color-oxblood);
+}
+
+.navbar .nav-link {
+  color: var(--color-seafoam);
+  margin-left: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-crimson);
+}
+
+.btn-primary {
+  background-color: var(--color-crimson);
+  border-color: var(--color-crimson);
+  color: var(--color-seafoam);
+  font-weight: 600;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #7f161a;
+  border-color: #7f161a;
+}
+
+.card {
+  background-color: var(--color-egypt);
+  color: var(--color-oxblood);
+  border-radius: 0.75rem;
+  border: none;
+  padding: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+input,
+textarea {
+  background-color: #55201b; 
+  color: var(--color-seafoam);
+  border: 1px solid var(--color-crimson);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #a01b24;
+  outline: none;
+}
+
+footer {
+  background-color: var(--color-oxblood);
+  color: var(--color-seafoam);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/*header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--color-oxblood);
+} 
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+#projetos {
+  background-color: var(--color-egypt);
+  color: var(--color-oxblood);
+}
+
+.badge {
+  background-color: var(--color-crimson);
+  color: var(--color-seafoam);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+}
+*/
