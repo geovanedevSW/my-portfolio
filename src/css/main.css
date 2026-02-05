@@ -1,127 +1,130 @@
-:root {
-  --color-oxblood: #622021;
-  --color-crimson: #991b20;
-  --color-egypt: #e1caa5;
-  --color-seafoam: #fef9de;
-  --font-family: "Inter", system-ui, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-oxblood);
-  color: var(--color-seafoam);
+  background-color: var(--bg-primary);
+  color: var(--text-light);
   font-family: var(--font-family);
-  margin: 0;
-}
-/*
-a {
-  color: var(--color-crimson);
-  text-decoration: none;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
 }
 
-a:hover {
-  color: #7f161a;
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.navbar {
-  background-color: var(--color-oxblood);
+svg {
+  pointer-events: none;
+  color: var(bg-seconfary);
 }
 
-.navbar .nav-link {
-  color: var(--color-seafoam);
-  margin-left: 1rem;
+/* Utilitário - Remover elemento */
+.remove {
+  display: none;
 }
 
-.navbar .nav-link:hover {
-  color: var(--color-crimson);
-}
+/* ============================================================
+   COMPONENTES REUTILIZÁVEIS
+   ============================================================ */
 
-.btn-primary {
-  background-color: var(--color-crimson);
-  border-color: var(--color-crimson);
-  color: var(--color-seafoam);
-  font-weight: 600;
-  border-radius: 0.6rem;
-  padding: 0.6rem 1.2rem;
-  transition:
-    background-color 0.3s,
-    border-color 0.3s;
-}
 
-.btn-primary:hover {
-  background-color: #7f161a;
-  border-color: #7f161a;
-}
-
-.card {
-  background-color: var(--color-egypt);
-  color: var(--color-oxblood);
-  border-radius: 0.75rem;
-  border: none;
-  padding: 1rem;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-}
-
+/* ===== Forms ===== */
 input,
-textarea {
-  background-color: #55201b; 
-  color: var(--color-seafoam);
-  border: 1px solid var(--color-crimson);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+textarea,
+select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  width: 100%;
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
 }
 
 input:focus,
-textarea:focus {
-  border-color: #a01b24;
+textarea:focus,
+select:focus {
+  border-color: var(--input-border-focus);
   outline: none;
+  box-shadow: 0 0 0 3px rgba(153, 27, 32, 0.1);
 }
 
-footer {
-  background-color: var(--color-oxblood);
-  color: var(--color-seafoam);
-  text-align: center;
-  padding: 1rem 0;
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-egypt-60);
 }
 
-/*header {
-  text-align: center;
-  padding: 4rem 1rem;
-  background-color: var(--color-oxblood);
-} 
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-section {
-  padding: 4rem 1rem;
-}
-
-#projetos {
-  background-color: var(--color-egypt);
-  color: var(--color-oxblood);
-}
-
+/* ===== Badges ===== */
 .badge {
   background-color: var(--color-crimson);
   color: var(--color-seafoam);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   padding: 0.25rem 0.5rem;
-  border-radius: 0.4rem;
-  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  display: inline-block;
 }
-*/
+
+/* ===== Seções ===== */
+section {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+/* ===== Headers ===== */
+header {
+  text-align: center;
+  background-color: var(--color-oxblood);
+}
+
+header h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-bold);
+}
+
+header p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ===== Alerts ===== */
+.alert {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.alert-success {
+  background-color: var(--success);
+  color: white;
+}
+
+.alert-warning {
+  background-color: var(--warning);
+  color: white;
+}
+
+.alert-error {
+  background-color: var(--error);
+  color: white;
+}
+
+.alert-info {
+  background-color: var(--info);
+  color: white;
+}
+
+hr {
+  border-color: var(--border-primary);
+}
