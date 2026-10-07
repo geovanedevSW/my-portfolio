@@ -10,6 +10,11 @@ export function SiteFooter() {
         <div>
           <p className="font-display font-bold">Geovane Vinicios</p>
           <p className="mt-2 text-primary-foreground/55">{copy.common.footerRole}</p>
+          <p className="mt-2 text-primary-foreground/55">
+          <a href="mailto:gviniciossalesp@gmail.com" className="transition-colorshover:text-muted">
+            gviniciossalesp@gmail.com</a>
+          </p>
+
         </div>
         <div className="flex items-center gap-7">
           <span>© 2026</span>
