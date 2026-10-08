@@ -80,10 +80,6 @@ export function ProfileCard({ height }: ProfileCardProps) {
             <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-mist/80">
               Perfil profissional
             </span>
-
-            <span className="grid h-9 w-9 place-items-center rounded-lg border border-primary-foreground/20 bg-primary-foreground/5 font-display text-xs font-bold text-primary-foreground/85">
-              GV
-            </span>
           </div>
 
           <div className="mt-4 rounded-2xl border border-primary-foreground/20 bg-primary-foreground/5 p-1.5 [transform:translateZ(20px)]">
